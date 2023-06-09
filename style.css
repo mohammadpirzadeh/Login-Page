@@ -19,7 +19,7 @@ body{
 
 .login-box{
     position: relative;
-    width: 21vw;
+    width: 25vw;
     height: 50vh;
     border: 2px solid wheat;
     border-radius: 20px;
@@ -227,4 +227,13 @@ button:hover{
         border: 2px solid wheat;
     border-radius: 00px;
     }
+}
+
+@media (max-width : 1370px){
+    .login-box {
+        width: 100vw;
+        height: 100vh;
+        border: 2px solid wheat;
+        border-radius: 00px;
+        }
 }
