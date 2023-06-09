@@ -1,3 +1,217 @@
+<<<<<<< HEAD
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-image: url(colorfull-background.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+
+.login-box{
+    position: relative;
+    width: 390px;
+    height: 320px;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+
+}
+
+h1{
+    color:#fffbfb !important;
+    font-weight: bolder !important;
+    font-size: 25px !important; 
+    display: flex;
+    line-height: 200px;
+     text-align: start;
+    justify-content: start; 
+    top: 310px;
+}
+
+.inputs {
+position: relative;
+width: 100%;
+margin-top: 80px;
+margin-bottom: 30px;
+/* margin: 30px 0; */
+color: whitesmoke;
+border-bottom: 1px solid hsl(0, 0%, 100%);
+
+
+}
+
+.inputs label {
+position: absolute;
+top: 50%;
+left: 0px;
+transform: translateY(-50%);
+pointer-events: none;
+color: whitesmoke;
+transition: 0.5s;
+
+}
+.inputs input:focus~label,.inputs input:valid~label{
+top: -10px;
+font-size: 20px;
+
+
+}
+
+.inputs input {
+width: 100%;
+height: 40px;
+background: transparent;
+border: none;
+outline: none;
+font-size: 1em;
+color: whitesmoke;
+    
+}
+
+.inputs i{
+    color: whitesmoke;
+    position:absolute;
+    line-height: 20px;
+    left: 310px;
+    font-size:8;
+    
+}
+  
+
+
+
+
+.remember-forget a:hover{
+    text-decoration: underline;
+    color:aqua ;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border:none;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    transition: 0.5s;
+    align-items: center;
+    font-weight: 800 !important;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(81, 255, 162);
+    transition: 0.5s;
+    font-size: 17px !important;
+    font-weight: 1000 !important;
+}
+
+
+.signup {
+    font-size:15px ;
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+    
+}
+.signup a{
+    color: rgb(255, 254, 254);
+    transition: 0.5s;
+    margin-left: 10px;
+
+
+    @media (max-width : 281px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+        
+        }
+    
+        @media (max-width : 360px){
+            .login-box {
+                width: 100vw;
+                height: 100vh;
+                border: none;
+                border-radius: 0;
+            }
+            
+            }
+    
+    @media (max-width : 420px){
+    .login-box {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    
+    }
+    
+    
+    @media (max-width : 380px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            border-radius: 0;
+        }
+    }
+    
+    @media (max-width : 376px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            /* border: none;
+            border-radius:0px; */
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    
+    @media (max-width : 768px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    @media (max-width : 1000px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    
+    @media (max-width : 1025px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    
+=======
 *{
     margin: 0 ;
     padding: 0 ;
@@ -150,3 +364,4 @@ button:hover{
         border-radius: 0;
     }
 }
+>>>>>>> 242a706d38b3e824c5530553b5e0e05ff557e8d3
