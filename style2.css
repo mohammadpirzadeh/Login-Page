@@ -19,13 +19,13 @@ body{
 
 .login-box{
     position: relative;
-    width: 21vw;
-    height: 50vh;
+    width: 390px;
+    height: 320px;
     border: 2px solid wheat;
     border-radius: 20px;
     display: flex;
-     justify-content: center;
-    align-items: center; 
+    justify-content: center;
+    /* align-items: center; */
 
 
 }
@@ -35,15 +35,18 @@ h1{
     font-weight: bolder !important;
     font-size: 25px !important; 
     display: flex;
-     /* text-align: center; */
-    justify-content: center; 
-    
+    line-height: 200px;
+     text-align: start;
+    justify-content: start; 
+    top: 310px;
 }
 
 .inputs {
 position: relative;
-width: 17vw;
-margin:30px 0px;
+width: 100%;
+margin-top: 80px;
+margin-bottom: 30px;
+/* margin: 30px 0; */
 color: whitesmoke;
 border-bottom: 1px solid hsl(0, 0%, 100%);
 
@@ -69,7 +72,7 @@ font-size: 20px;
 
 .inputs input {
 width: 100%;
-height: 7vh;
+height: 40px;
 background: transparent;
 border: none;
 outline: none;
@@ -82,27 +85,14 @@ color: whitesmoke;
     color: whitesmoke;
     position:absolute;
     line-height: 20px;
-    left: 280px;
+    left: 310px;
     font-size:8;
     
 }
   
-.remember-forget{
-color: whitesmoke;
-display: flex;
-justify-content: space-between;
 
-}
 
-.remember-forget a{
-    color: #000000;
-    /* border: 0.5px solid rgb(27, 97, 195);
-    background-color: whitesmoke;
-    padding: 3px; */
-    font-size: 15px;
-    transition: 0.5s;
-   
-}
+
 
 .remember-forget a:hover{
     text-decoration: underline;
@@ -111,7 +101,7 @@ justify-content: space-between;
 
 button{
     width: 100%;
-    height: 5vh;
+    height: 30px;
     border:none;
     border-radius: 15px;
     border-bottom-right-radius: 0;
@@ -130,10 +120,6 @@ button:hover{
     font-weight: 1000 !important;
 }
 
-.remember-forget label input {
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
 
 .signup {
     font-size:15px ;
@@ -145,86 +131,82 @@ button:hover{
     color: rgb(255, 254, 254);
     transition: 0.5s;
     margin-left: 10px;
-}
-.signup a:hover{
-    text-decoration: underline;
-    color: aqua;
-}
 
 
-@media (max-width : 281px){
-    .login-box {
-        width: 100vw;
-        height: 100vh;
-        border: 2px solid wheat;
-    border-radius: 00px;
-    }
-    
-    }
-
-    @media (max-width : 360px){
+    @media (max-width : 281px){
         .login-box {
             width: 100vw;
             height: 100vh;
-            border: none;
-            border-radius: 0;
+            border: 2px solid wheat;
+        border-radius: 00px;
         }
         
         }
-
-@media (max-width : 420px){
-.login-box {
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    border-radius: 0;
-}
-
-}
-
-
-@media (max-width : 380px){
+    
+        @media (max-width : 360px){
+            .login-box {
+                width: 100vw;
+                height: 100vh;
+                border: none;
+                border-radius: 0;
+            }
+            
+            }
+    
+    @media (max-width : 420px){
     .login-box {
         width: 100vw;
         height: 100vh;
         border: none;
         border-radius: 0;
     }
-}
-
-@media (max-width : 376px){
-    .login-box {
-        width: 100vw;
-        height: 100vh;
-        /* border: none;
-        border-radius:0px; */
-        border: 2px solid wheat;
-    border-radius: 00px;
+    
     }
-}
-
-@media (max-width : 768px){
-    .login-box {
-        width: 100vw;
-        height: 100vh;
-        border: 2px solid wheat;
-    border-radius: 00px;
+    
+    
+    @media (max-width : 380px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            border-radius: 0;
+        }
     }
-}
-@media (max-width : 1000px){
-    .login-box {
-        width: 100vw;
-        height: 100vh;
-        border: 2px solid wheat;
-    border-radius: 00px;
+    
+    @media (max-width : 376px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            /* border: none;
+            border-radius:0px; */
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
     }
-}
-
-@media (max-width : 1025px){
-    .login-box {
-        width: 100vw;
-        height: 100vh;
-        border: 2px solid wheat;
-    border-radius: 00px;
+    
+    @media (max-width : 768px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
     }
-}
+    @media (max-width : 1000px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    
+    @media (max-width : 1025px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    
