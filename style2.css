@@ -133,37 +133,55 @@ button:hover{
     margin-left: 10px;
 
 
-    @media (max-width : 281px){
+    @media (max-width : 1370px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+            border-radius: 00px;
+            }
+    }
+    
+    @media (max-width : 1025px){
         .login-box {
             width: 100vw;
             height: 100vh;
             border: 2px solid wheat;
         border-radius: 00px;
         }
+    }
+    
+    @media (max-width : 1000px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    
+    
+    @media (max-width : 768px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid wheat;
+        border-radius: 00px;
+        }
+    }
+    
+    
+    @media (max-width : 420px){
+        .login-box {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            border-radius: 0;
+        }
         
         }
     
-        @media (max-width : 360px){
-            .login-box {
-                width: 100vw;
-                height: 100vh;
-                border: none;
-                border-radius: 0;
-            }
-            
-            }
-    
-    @media (max-width : 420px){
-    .login-box {
-        width: 100vw;
-        height: 100vh;
-        border: none;
-        border-radius: 0;
-    }
-    
-    }
-    
-    
+        
     @media (max-width : 380px){
         .login-box {
             width: 100vw;
@@ -172,6 +190,7 @@ button:hover{
             border-radius: 0;
         }
     }
+    
     
     @media (max-width : 376px){
         .login-box {
@@ -184,29 +203,22 @@ button:hover{
         }
     }
     
-    @media (max-width : 768px){
+    @media (max-width : 360px){
         .login-box {
             width: 100vw;
             height: 100vh;
-            border: 2px solid wheat;
-        border-radius: 00px;
+            border: none;
+            border-radius: 0;
         }
-    }
-    @media (max-width : 1000px){
-        .login-box {
-            width: 100vw;
-            height: 100vh;
-            border: 2px solid wheat;
-        border-radius: 00px;
+        
         }
-    }
     
-    @media (max-width : 1025px){
+    @media (max-width : 281px){
         .login-box {
             width: 100vw;
             height: 100vh;
             border: 2px solid wheat;
         border-radius: 00px;
         }
-    }
-    
+        
+        }
