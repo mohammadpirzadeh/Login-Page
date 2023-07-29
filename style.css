@@ -7,6 +7,8 @@
 }
 
 body{
+
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,21 +17,94 @@ body{
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
+    
+    
+ 
+ }
+.dark-mode {
+    background: #242121;
+    filter: invert(1) hue-rotate(210deg);
+    color: wheat;
+    
+    
+
+
+/*     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-image: url(colorfull-background.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat; */
 }
 
+.login-box form {
 
+
+    z-index: 10;
+}
 .login-box{
     position: relative;
-    width: 25vw;
-    height: 50vh;
+    width: 30vw;
+    height: 60vh;
     border: 2px solid wheat;
     border-radius: 20px;
     display: flex;
      justify-content: center;
     align-items: center; 
-
+    background-image:repeating-conic-gradient(from var(--a) , hwb(319 10% 14%) 0% ,hwb(319 10% 14%) 5%, transparent 5% , transparent 40% , hwb(319 10% 14%) 50%);
+animation: animate 4s linear infinite;
+border-radius: 25px;
+z-index : 1 ;
 
 }
+
+
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        --a : 0deg;
+    }
+    100%
+    {
+        --a : 360deg;
+    }
+}
+
+.login-box::before 
+{
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background-image:repeating-conic-gradient(from var(--a) , #2262c8 0% , #2262c8 5%, transparent 5% , transparent 40% , #2262c8 50%);
+animation: animate 4s linear infinite;
+animation-delay: -1s;
+border-radius: 25px;
+
+}
+
+.login-box::after
+{
+content: '';
+position: absolute;
+inset: 11px;
+background-color: #231e34;
+border-radius: 20px;
+border: 10px solid rgba(17, 15, 27) ;
+}
+
+
+
 
 h1{
     color:#fffbfb !important;
@@ -38,6 +113,7 @@ h1{
     display: flex;
      /* text-align: center; */
     justify-content: center; 
+    z-index : 10 ;
     
 }
 
@@ -47,8 +123,12 @@ width: 17vw;
 margin:30px 0px;
 color: whitesmoke;
 border-bottom: 1px solid hsl(0, 0%, 100%);
+z-index : 10 ;
 
 
+}
+.label{
+    z-index: 10;
 }
 
 .inputs label {
@@ -59,11 +139,13 @@ transform: translateY(-50%);
 pointer-events: none;
 color: whitesmoke;
 transition: 0.5s;
+z-index : 10 ;
 
 }
 .inputs input:focus~label,.inputs input:valid~label{
 top: -10px;
 font-size: 20px;
+z-index : 10 ;
 
 
 }
@@ -76,7 +158,7 @@ border: none;
 outline: none;
 font-size: 1em;
 color: whitesmoke;
-    
+z-index : 10 ;
 }
 
 .inputs i{
@@ -85,32 +167,39 @@ color: whitesmoke;
     line-height: 20px;
     left: 280px;
     font-size:8;
+    z-index : 10 ;
     
 }
   
 .remember-forget{
+    z-index : 10 ;
 color: whitesmoke;
 display: flex;
 justify-content: space-between;
 
+
 }
 
 .remember-forget a{
-    color: #000000;
+    color: wheat;
+    z-index : 10 ;
     /* border: 0.5px solid rgb(27, 97, 195);
     background-color: whitesmoke;
     padding: 3px; */
     font-size: 15px;
     transition: 0.5s;
+    
    
 }
 
 .remember-forget a:hover{
     text-decoration: underline;
     color:aqua ;
+    z-index : 50 ;
 }
 
 button{
+    z-index : 50 ;
     width: 100%;
     height: 5vh;
     border:none;
@@ -120,7 +209,7 @@ button{
     transition: 0.5s;
     align-items: center;
     font-weight: 800 !important;
-    
+
 }
 
 button:hover{
@@ -129,27 +218,32 @@ button:hover{
     transition: 0.5s;
     font-size: 17px !important;
     font-weight: 1000 !important;
+    z-index : 10 ;
 }
 
 .remember-forget label input {
     margin-right: 5px;
     margin-bottom: 10px;
+    z-index : 10 ;
 }
 
 .signup {
     font-size:15px ;
     margin-top: 25px;
-    color: rgb(0, 0, 0);
+    color:wheat;
+    z-index : 10 ;
     
 }
 .signup a{
     color: rgb(255, 254, 254);
     transition: 0.5s;
     margin-left: 10px;
+    z-index : 10 
 }
 .signup a:hover{
     text-decoration: underline;
     color: aqua;
+    z-index : 10 ;
 }
 
 @media (max-width : 1370px){
@@ -158,6 +252,7 @@ button:hover{
         height: 100vh;
         border: 2px solid wheat;
         border-radius: 00px;
+        z-index : 10 ;
         }
 }
 
@@ -167,6 +262,7 @@ button:hover{
         height: 100vh;
         border: 2px solid wheat;
     border-radius: 00px;
+    z-index : 10 ;
     }
 }
 
@@ -176,6 +272,7 @@ button:hover{
         height: 100vh;
         border: 2px solid wheat;
     border-radius: 00px;
+    z-index : 10 ;
     }
 }
 
@@ -186,6 +283,7 @@ button:hover{
         height: 100vh;
         border: 2px solid wheat;
     border-radius: 00px;
+    z-index : 10 ;
     }
 }
 
@@ -196,6 +294,7 @@ button:hover{
         height: 100vh;
         border: none;
         border-radius: 0;
+        z-index : 10 ;
     }
     
     }
@@ -207,6 +306,7 @@ button:hover{
         height: 100vh;
         border: none;
         border-radius: 0;
+        z-index : 10 ;
     }
 }
 
@@ -219,6 +319,7 @@ button:hover{
         border-radius:0px; */
         border: 2px solid wheat;
     border-radius: 00px;
+    z-index : 10 ;
     }
 }
 
@@ -228,6 +329,7 @@ button:hover{
         height: 100vh;
         border: none;
         border-radius: 0;
+        z-index : 10 ;
     }
     
     }
@@ -238,6 +340,19 @@ button:hover{
         height: 100vh;
         border: 2px solid wheat;
     border-radius: 00px;
+    z-index : 10 ;
     }
     
+    }
+    .drk {
+       position: absolute;
+       top:0;
+       width: 20vw;
+       z-index : 10 ;
+    }
+    .drk:hover{
+        background-color: #242121;
+        color: white;
+        z-index : 10 ;
+
     }
